@@ -1,0 +1,119 @@
+/* --Mobile-- */
+.menu-button{
+    display:none ;
+}
+.checkboxx-input{
+    display: none;
+}
+.over__load{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.checkboxx-input:checked ~ .over__load{
+    display: block;
+}
+.checkboxx-input:checked ~ .reponsie-mobile{
+    transform: translateX(0%);
+}
+.nav-mobile-ic{
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav-mobile li{
+    padding: 16px 0;
+}
+.reponsie-mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    /* opacity: 0; */
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s, opacity linear 0.2s ;
+}
+.close-mobile{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 16px;
+    top: 16px;
+    color: #fff;
+    transition: transform linear 0.3s, opacity linear 0.2s;
+}
+.subnav{
+    display: none;
+}
+    /* .subnav li:hover #nav-mobile{
+        display: block;
+    } */
+.reponsie-mobile{
+    display: none;
+}
+@keyframes FadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 739px){
+    .reponsie-mobile{
+        display: block;
+    }
+    .checkboxx-input{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    #main{
+        width: 1000px;
+    }
+    .content-section{
+        overflow: hidden;
+    }
+
+    .menu-button{
+        display:block;
+        color: #fff;
+        line-height: 46px;  
+        padding: 0 16px;
+        align-items: center;
+
+    }
+    
+    #nav > li {
+        display: block;
+    }
+            /* .menu-button:hover{
+                background-color: #333;
+                opacity: 1;
+            } */
+    .searchbutton{
+        display: none;
+    }
+    /* #main #nav{
+        display: none;
+    } */
+    .slider {
+        width: 100%;
+    }
+}
+/* --Tablet-- */
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+    #content{
+        width: 100%;
+    }
+}
+/* --PC-- */
+@media only screen and (min-width: 1024px){
+
+}

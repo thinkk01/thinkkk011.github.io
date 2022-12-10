@@ -1,0 +1,61 @@
+@media only screen and (max-width: 723px) {
+    #nav > li{
+        display: block;
+        border:  solid 1px;
+    }
+    #nav {
+        display: block;
+    }
+    .places-list{
+        width: 100%;
+    }
+    #nav li a{
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    .searchbutton{
+        display: none;
+    }
+    .content{
+        overflow: hidden;
+    }
+   #contact {
+    overflow: hidden;
+   }
+    #header{
+         overflow: hidden;
+    }
+    .tour-section{
+        height: 1600px;
+    }
+    .m-bottom{
+        display: block;
+    }
+    .places-list .place-itemp{
+        width: 100%
+    }
+    
+    .submit-btn{
+        width: 100%;
+    }
+    .s-coll-full{
+        width: 100%;
+    }
+    #nav .subnav {
+        padding: 4px 12px;
+        position: initial;
+        background-color: #333;
+    }
+    
+    .menu-bt{
+        display: block;
+    }
+    .member-list{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 42px;
+    }
+   
+}

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* -----Header----- */
+#header{
+    background-color: #000;
+    height: 46px;
+    width: 100%;
+    position: fixed;
+}
+#nav li{
+    position: relative;
+}
+#nav > li{
+    display: inline-block;
+}
+.nav,.subnav{
+    list-style-type: none;
+}   
+#nav > li > a{
+    color: #fff;
+}
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;    
+    line-height: 46px;
+    display: inline-block;
+}
+#nav .subnav a{
+    padding: 0 16px;
+}
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a,
+.subnav  li:hover a {
+    background-color: #ccc; 
+}
+.subnav li a{
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 50px;
+}
+.subnav-arrown{
+    font-size: 10px;
+    margin-left: 5px;
+}
+#nav{
+    display: inline-block;
+}
+.search:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.search {
+    display: block;
+    color: beige;
+    float: right;
+    line-height: 46px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+/* -----Slider----- */
+#slider{
+    text-align: center;
+    padding-top: 50%;
+    background-image: url(/assets/img/ny.jpg);
+    background-repeat: none;  
+    padding-bottom: 100px ;  
+    animation: asd ease .5s;   
+}
+@keyframes asd {
+    from {
+        opacity: 0;
+        transform: translateY(-500px) ;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
